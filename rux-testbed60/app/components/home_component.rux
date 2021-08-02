@@ -1,0 +1,11 @@
+class HomeComponent < ViewComponent::Base
+  include RuxBootstrap::Buttons
+
+  def call
+    <div>
+      <DangerButton outline={true} size={:large} disabled block-level={true}>
+        Click Me!
+      </DangerButton>
+    </div>
+  end
+end

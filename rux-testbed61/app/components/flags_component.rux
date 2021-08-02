@@ -1,0 +1,9 @@
+class FlagsComponent < ViewComponent::Base
+  def initialize(first_name:)
+    @first_name = first_name
+  end
+
+  def call
+    <p>Hey there, {@first_name}!</p>
+  end
+end
